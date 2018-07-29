@@ -1,0 +1,162 @@
+/* iPhone 6+, 7+, 8+ w414 h622 */
+/* iPhone 6, 7, 8 w375 h544 */
+/* iPhone X w375 h738 */
+
+/* Galaxy S7, S8, S9 w360 h740 */
+/* LG G5, Galaxy Note 5 w480 h853 */
+/* Nexus, Google Pixel w441 h731 */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  color: #434343;
+  max-width: 480px;
+  max-height: 853px;
+}
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#app,
+.container {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'keepcalm-font';
+  src: url('font/KeepCalm-Medium.ttf'),
+      local('sans-serif');
+}
+
+.keepcalm-font {
+  font-family: 'keepcalm-font';
+}
+
+.dimmed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.first.container {
+  text-align: center;
+  position: relative;
+}
+
+.first .background {
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.first .title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.first .title .text-container {
+  position: relative;
+  height: 100%;
+}
+
+.first .title .text-container .text-vertical-middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 80%;
+}
+
+.first .title .crown {
+  font-size: 100px;
+}
+
+.first .title .text1 {
+  font-size: 50px;
+}
+
+.first .title .text2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.second.container {
+  padding-top: 10%;
+}
+
+.second img {
+  width: 100%;
+}
+
+.second .text-container {
+  text-align: center;
+}
+
+.third.gallery-vertical-swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.fourth {
+  padding-top: 10%;
+  height: 100%;
+}
+
+.fourth table {
+  padding: 20px;
+}
+
+.fourth table tr {
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.fourth table td {
+  vertical-align: top;  
+}
+
+.fourth table tr td.title {
+  font-weight: 900;
+  width: 20%;
+  /* line-height: 50px; */
+}
+
+/* w375px 이상 단말 */
+@media screen and (min-width: 376px) {
+  html, body {
+    min-width: 414px;
+    min-height: 622px;
+  }
+}
+
+/* w375px 이하 단말 */
+@media screen and (max-width: 375px) {
+  html, body {
+    min-width: 375px;
+    min-height: 544px;
+  }
+}
