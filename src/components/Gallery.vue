@@ -10,6 +10,7 @@
         :is-mirrored="false"
         :vertical-compact="true"
         :margin="[10, 10]"
+        class="grid-layout"
       >
         <grid-item
           style="overflow: hidden;"
@@ -62,7 +63,7 @@ export default {
   },
   computed: {
     swiperHeight() {
-      return this.clientHeight * 0.75;
+      return this.clientHeight * 0.9;
     },
   },
   methods: {
@@ -78,3 +79,13 @@ export default {
   },
 };
 </script>
+
+<style>
+  .third {
+    margin-top: 10%;
+  }
+  .grid-layout {
+    margin-top: -10px;
+  }
+</style>
+
