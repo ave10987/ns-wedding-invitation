@@ -2,47 +2,62 @@
   <swiper :options="gallerySwiperOption" class="full-screen-swiper" :style="{ height: `${galleryHeight}px` }">
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/second.jpg" alt="">
+        <img src="../../static/image/page3_01.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/first_background.jpg" alt="">
+        <img src="../../static/image/page3_02.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_03.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_04.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_05.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_06.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_07.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_08.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="https://dummyimage.com/600x400/000/fff" alt="">
+        <img src="../../static/image/page3_09.jpg" alt="">
+      </div>
+    </swiper-slide>
+    <swiper-slide @click.prevent.stop>
+      <div>
+        <img src="../../static/image/page3_10.jpg" alt="">
+      </div>
+    </swiper-slide>
+    <swiper-slide @click.prevent.stop>
+      <div>
+        <img src="../../static/image/page3_11.jpg" alt="">
+      </div>
+    </swiper-slide>
+    <swiper-slide @click.prevent.stop>
+      <div>
+        <img src="../../static/image/page3_12.jpg" alt="">
       </div>
     </swiper-slide>
   </swiper>

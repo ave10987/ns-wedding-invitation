@@ -12,6 +12,7 @@
         :margin="[10, 10]"
       >
         <grid-item
+          style="overflow: hidden;"
           v-for="(item, index) in layout"
           :key="index"
           :x="item.x"
@@ -19,7 +20,7 @@
           :w="item.w"
           :h="item.h"
           :i="item.i">
-            <img :data-src="item.src" alt="" style="width:100%; height:100%;" @click="onClickImage" :data-index="index" class="swiper-lazy">
+            <img :data-src="item.src" alt="" style="width:100%; position: absolute; top: 0; bottom: 0; margin: auto;" @click="onClickImage" :data-index="index" class="swiper-lazy">
         </grid-item>
       </grid-layout>
     </swiper-slide>
@@ -44,15 +45,18 @@ export default {
         mousewheel: true,
       },
       layout: [
-        { x: 0, y: 0, w: 2, h: 3, i: '1', src: '../../static/image/second.jpg' },
-        { x: 2, y: 0, w: 2, h: 6, i: '2', src: '../../static/image/first_background.jpg' },
-        { x: 0, y: 3, w: 2, h: 6, i: '3', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 2, y: 6, w: 2, h: 6, i: '4', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 0, y: 9, w: 2, h: 6, i: '5', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 2, y: 12, w: 2, h: 3, i: '6', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 0, y: 15, w: 2, h: 6, i: '7', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 2, y: 15, w: 2, h: 6, i: '8', src: 'https://dummyimage.com/600x400/000/fff' },
-        { x: 0, y: 21, w: 4, h: 6, i: '9', src: 'https://dummyimage.com/600x400/000/fff' },
+        { x: 0, y: 0, w: 2, h: 3, i: '1', src: '../../static/image/page3_01.jpg' },
+        { x: 2, y: 0, w: 2, h: 6, i: '2', src: '../../static/image/page3_02.jpg' },
+        { x: 0, y: 3, w: 2, h: 6, i: '3', src: '../../static/image/page3_03.jpg' },
+        { x: 2, y: 6, w: 2, h: 6, i: '4', src: '../../static/image/page3_04.jpg' },
+        { x: 0, y: 9, w: 2, h: 6, i: '5', src: '../../static/image/page3_05.jpg' },
+        { x: 2, y: 12, w: 2, h: 3, i: '6', src: '../../static/image/page3_06.jpg' },
+        { x: 0, y: 15, w: 2, h: 3, i: '7', src: '../../static/image/page3_07.jpg' },
+        { x: 2, y: 15, w: 2, h: 6, i: '8', src: '../../static/image/page3_08.jpg' },
+        { x: 0, y: 18, w: 2, h: 6, i: '9', src: '../../static/image/page3_09.jpg' },
+        { x: 2, y: 21, w: 2, h: 6, i: '10', src: '../../static/image/page3_10.jpg' },
+        { x: 0, y: 24, w: 2, h: 6, i: '11', src: '../../static/image/page3_11.jpg' },
+        { x: 2, y: 27, w: 2, h: 3, i: '12', src: '../../static/image/page3_12.jpg' },
       ],
     };
   },

@@ -6,13 +6,13 @@
         <td class="title">일시</td>
         <td>2018년 9월 1일 토요일 낮 12시</td>
       </tr>
-      <tr>
+      <tr class="wide-height">
         <td class="title">주소</td>
-        <td>서울시 구로구 경인로 610 (신도림동 413-9) 신도림 S컨벤션웨딩홀</td>
+        <td class="small">서울시 구로구 경인로 610 (신도림동 413-9)<br />신도림 S컨벤션웨딩홀</td>
       </tr>
-      <tr>
+      <tr class="wide-height">
         <td class="title">지하철</td>
-        <td>1호선 구로역 3번 출구 우측방향 도보 5분 1, 2호선 신도림역 1번 출구 좌측방향 도보 7분</td>
+        <td class="small">1호선 구로역 3번 출구 우측방향 도보 5분<br />1, 2호선 신도림역 1번 출구 좌측방향 도보 7분</td>
       </tr>
       <tr>
         <td class="title">셔틀버스</td>

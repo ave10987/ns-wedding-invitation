@@ -101,7 +101,49 @@ body {
 }
 
 .second.container {
-  padding-top: 10%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.second .image-container {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.second img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.second .text-container {
+  flex: 1;
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.second .text-container .welcome-text,
+.second .text-container .parents,
+.second .text-container .time {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second .text-container .welcome-text {
+  flex: 2;
+  -webkit-flex: 2;
+}
+.second .text-container .parents,
+.second .text-container .time {
+  flex: 1;
+  -webkit-flex: 1;
 }
 
 .second img {
@@ -130,11 +172,6 @@ body {
   padding: 20px;
 }
 
-.fourth table tr {
-  margin-bottom: 10px;
-  height: 50px;
-}
-
 .fourth table td {
   vertical-align: top;  
 }
@@ -142,7 +179,6 @@ body {
 .fourth table tr td.title {
   font-weight: 900;
   width: 20%;
-  /* line-height: 50px; */
 }
 
 /* w375px 이상 단말 */
@@ -151,6 +187,37 @@ body {
     min-width: 414px;
     min-height: 622px;
   }
+
+  .second .text-container {
+    line-height: 30px;
+  }
+
+  .second .text-container .welcome-text,
+  .second .text-container .parents .name,
+  .second .text-container .time {
+    font-size: 22px;
+  }
+
+  .second .text-container .parents .chinese {
+    font-size: 16px;
+  }
+
+  .fourth table {
+    font-size: 18px;
+  }
+
+  .fourth table tr {
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  .fourth table tr.wide-height {
+    height: 70px;
+  }
+
+  .fourth table .small {
+    font-size: 16px;
+  }
 }
 
 /* w375px 이하 단말 */
@@ -158,5 +225,36 @@ body {
   html, body {
     min-width: 375px;
     min-height: 544px;
+  }
+
+  .second .text-container {
+    line-height: 26px;
+  }
+
+  .second .text-container .welcome-text,
+  .second .text-container .parents .name,
+  .second .text-container .time {
+    font-size: 18px;
+  }
+
+  .second .text-container .parents .chinese {
+    font-size: 12px;
+  }
+
+  .fourth table {
+    font-size: 16px;
+  }
+
+  .fourth table tr {
+    margin-bottom: 10px;
+    height: 30px;
+  }
+
+  .fourth table tr.wide-height {
+    height: 50px;
+  }
+
+  .fourth table .small {
+    font-size: 14px;
   }
 }

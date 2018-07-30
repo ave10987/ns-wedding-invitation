@@ -1,6 +1,6 @@
 <template>
   <div class="keepcalm-font first container">
-    <img class="background" src="../../static/image/first_background.jpg" alt="" @load="backgroundLoaded">
+    <img class="background" src="../../static/image/page1_intro.jpg" alt="" @load="backgroundLoaded">
     <div class="title">
       <div class="text-container">
         <div class="text-vertical-middle">
