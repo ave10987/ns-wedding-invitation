@@ -1,7 +1,7 @@
 <template>
   <div class="second container">
     <div class="image-container">
-      <img src="../../static/image/page2_welcome.jpg" alt="">
+      <img data-src="../../static/image/page2_welcome.jpg" alt="" class="swiper-lazy">
     </div>
     <div class="text-container">
       <div class="welcome-text">

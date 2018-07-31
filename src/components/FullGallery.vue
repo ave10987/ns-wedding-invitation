@@ -2,62 +2,62 @@
   <swiper :options="gallerySwiperOption" class="full-screen-swiper" :style="{ height: `${galleryHeight}px` }">
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_01.jpg" alt="">
+        <img src="/static/image/page3_01.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_02.jpg" alt="">
+        <img src="/static/image/page3_02.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_03.jpg" alt="">
+        <img src="/static/image/page3_03.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_04.jpg" alt="">
+        <img src="/static/image/page3_04.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_05.jpg" alt="">
+        <img src="/static/image/page3_05.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_06.jpg" alt="">
+        <img src="/static/image/page3_06.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_07.jpg" alt="">
+        <img src="/static/image/page3_07.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_08.jpg" alt="">
+        <img src="/static/image/page3_08.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_09.jpg" alt="">
+        <img src="/static/image/page3_09.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_10.jpg" alt="">
+        <img src="/static/image/page3_10.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_11.jpg" alt="">
+        <img src="/static/image/page3_11.jpg" alt="">
       </div>
     </swiper-slide>
     <swiper-slide @click.prevent.stop>
       <div>
-        <img src="../../static/image/page3_12.jpg" alt="">
+        <img src="/static/image/page3_12.jpg" alt="">
       </div>
     </swiper-slide>
   </swiper>
@@ -71,13 +71,16 @@ export default {
   data() {
     return {
       gallerySwiperOption: {
-        // spaceBetween: 30,
+        spaceBetween: 30,
         effect: 'coverflow',
         grabCursor: true,
         loop: true,
         zoom: false,
+        lazy: {
+          loadPrevNext: true,
+          loadPrevNextAmount: 2,
+        },
         centeredSlides: true,
-        slidesPerView: 'auto',
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
@@ -111,6 +114,11 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent!important;
+  justify-content: space-around!important;
 }
 
 .full-screen-swiper div {

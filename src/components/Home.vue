@@ -41,7 +41,7 @@ export default {
       mainSwiperOption: {
         lazy: {
           loadPrevNext: true,
-          loadPrevNextAmount: 2,
+          loadPrevNextAmount: 1,
         },
       },
       isGalleryOpen: false,

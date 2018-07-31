@@ -1,6 +1,6 @@
 <template>
   <swiper :options="verticalSwiperOption" class="third gallery-vertical-swiper" :style="{height: `${swiperHeight}px`}">
-    <swiper-slide style="box-sizing: border-box; -webkit-box-sizing: border-box; height: auto;">
+    <swiper-slide style="box-sizing: border-box; -webkit-box-sizing: border-box; height: auto; padding: 0 5px;">
       <grid-layout
         :layout="layout"
         :col-num="4"
@@ -46,18 +46,18 @@ export default {
         mousewheel: true,
       },
       layout: [
-        { x: 0, y: 0, w: 2, h: 3, i: '1', src: '../../static/image/page3_01.jpg' },
-        { x: 2, y: 0, w: 2, h: 6, i: '2', src: '../../static/image/page3_02.jpg' },
-        { x: 0, y: 3, w: 2, h: 6, i: '3', src: '../../static/image/page3_03.jpg' },
-        { x: 2, y: 6, w: 2, h: 6, i: '4', src: '../../static/image/page3_04.jpg' },
-        { x: 0, y: 9, w: 2, h: 6, i: '5', src: '../../static/image/page3_05.jpg' },
-        { x: 2, y: 12, w: 2, h: 3, i: '6', src: '../../static/image/page3_06.jpg' },
-        { x: 0, y: 15, w: 2, h: 3, i: '7', src: '../../static/image/page3_07.jpg' },
-        { x: 2, y: 15, w: 2, h: 6, i: '8', src: '../../static/image/page3_08.jpg' },
-        { x: 0, y: 18, w: 2, h: 6, i: '9', src: '../../static/image/page3_09.jpg' },
-        { x: 2, y: 21, w: 2, h: 6, i: '10', src: '../../static/image/page3_10.jpg' },
-        { x: 0, y: 24, w: 2, h: 6, i: '11', src: '../../static/image/page3_11.jpg' },
-        { x: 2, y: 27, w: 2, h: 3, i: '12', src: '../../static/image/page3_12.jpg' },
+        { x: 0, y: 0, w: 2, h: 3, i: '1', src: '/static/image/page3_01.jpg' },
+        { x: 2, y: 0, w: 2, h: 6, i: '2', src: '/static/image/page3_02.jpg' },
+        { x: 0, y: 3, w: 2, h: 6, i: '3', src: '/static/image/page3_03.jpg' },
+        { x: 2, y: 6, w: 2, h: 6, i: '4', src: '/static/image/page3_04.jpg' },
+        { x: 0, y: 9, w: 2, h: 6, i: '5', src: '/static/image/page3_05.jpg' },
+        { x: 2, y: 12, w: 2, h: 3, i: '6', src: '/static/image/page3_06.jpg' },
+        { x: 0, y: 15, w: 2, h: 3, i: '7', src: '/static/image/page3_07.jpg' },
+        { x: 2, y: 15, w: 2, h: 6, i: '8', src: '/static/image/page3_08.jpg' },
+        { x: 0, y: 18, w: 2, h: 6, i: '9', src: '/static/image/page3_09.jpg' },
+        { x: 2, y: 21, w: 2, h: 6, i: '10', src: '/static/image/page3_10.jpg' },
+        { x: 0, y: 24, w: 2, h: 6, i: '11', src: '/static/image/page3_11.jpg' },
+        { x: 2, y: 27, w: 2, h: 3, i: '12', src: '/static/image/page3_12.jpg' },
       ],
     };
   },
